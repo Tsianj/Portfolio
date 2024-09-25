@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5, h6{
 img{
     max-width: 100%;
     height: auto;
-}
+    }
 section{
     padding: 65px 0 80px 0;
 }
@@ -30,6 +30,21 @@ section .heading h2{
 }
 ul{
     list-style: none;
+}
+.rounded-circle{
+    animation: bounce 2s infinite;
+}
+/* Définition de l'animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px); /* Hauteur du rebond */
+    }
+    60% {
+        transform: translateY(-15px); /* Rebond plus petit */
+    }
 }
 
 /* NAVBAR */
